@@ -1,0 +1,165 @@
+
+
+
+@font-face {
+    font-family: all;
+    font-weight: bolder;
+    src: url(../Playwrite_DE_Grund/static/PlaywriteDEGrund-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: all;
+    background-color: aliceblue;
+    min-height: 100vh;
+    overflow-x:hidden ;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(0,51,41);
+    font-weight: bolder;
+
+}
+
+
+.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+.text {
+position: relative;
+font-size: 4rem;
+color: white;
+font: bold;
+text-shadow: 2px 2px 2px #003329;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+
+}
+a:hover {
+    background-color: #003329;
+}
+
+
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+}
+.about{
+    position: relative;
+    padding-block: 0;
+    background-color: #003329;
+    color: white;
+    background: linear-gradient(315deg, rgb(42,130,113) 3%, rgb(42,131,114) 38%, rgb(0,51,41) 68%, rgb(0,51,41)98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    padding-block:22px ;
+}
+
+
+
+@media (max-width: 1024px) {
+    .home{
+        display: none;
+    }
+    .about{
+        padding-block: 25px;
+    }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
