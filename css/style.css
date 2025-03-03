@@ -67,7 +67,7 @@ text-shadow: 2px 2px 2px #003329;
 
 }
 a:hover {
-    background-color: #003329;
+    background-color: #b653d2c4;
 }
 
 
@@ -79,12 +79,13 @@ a:hover {
     pointer-events: none;
     width: 100%;
 }
+
 .about{
     position: relative;
     padding-block: 0;
     background-color: #003329;
     color: white;
-    background: linear-gradient(315deg, rgb(42,130,113) 3%, rgb(42,131,114) 38%, rgb(0,51,41) 68%, rgb(0,51,41)98%);
+    background: linear-gradient(315deg, #7c2abfc4 3%, #0f0219 38%, #6618a7 68%, #5e0ca1df 98%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     padding-block:22px ;
